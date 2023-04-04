@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: blue;
+}
