@@ -12,6 +12,11 @@ export const useApi = () => ({
 
   signin: async (email: string, password: string) => {
     const response = await api.post("/signin", { email, password });
+    //because the api is not a real api , it is used this simulation
+    return {
+      user: { id: 3, name: "John", email: "john@gmail.com" },
+      token: "123456789",
+    };
     return response.data;
   },
   logout: async () => {
